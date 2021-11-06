@@ -111,3 +111,17 @@
   display: block;
   font-weight: 800;
 }
+
+#cart {
+  padding: 10px;
+}
+#cart_logo {
+  color: rgba(255, 255, 255);
+}
+
+#cart_text {
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 800;
+}

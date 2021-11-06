@@ -44,10 +44,12 @@ function Header() {
           <span id="order">&Orders</span>
         </div>
       </a>
-      <div className="nav_click" id="cart">
-        <AddShoppingCartIcon id="shopping_cart_logo" />
-        <button>Cart</button>
-      </div>
+      <a className="nav_click" id="cart">
+        <AddShoppingCartIcon id="cart_logo" />
+        <div id="cart_text">
+          <span>cart</span>
+        </div>
+      </a>
     </div>
   );
 }
