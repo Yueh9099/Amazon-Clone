@@ -27,12 +27,12 @@ function Header() {
           <SearchIcon id="nav_search_icon" />
         </div>
       </div>
-      <div className="nav_click" id="language">
+      <a className="nav_click" id="language">
         <IconButton>
           <IconFlagUS />
         </IconButton>
-      </div>
-      <a className="nav_click" id="sign">
+      </a>
+      <a href=" " className="nav_click" id="sign">
         <div id="sign_status">
           <span>Sign in</span>
         </div>

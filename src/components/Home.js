@@ -1,6 +1,14 @@
-import Header from "./Header";
 function Home() {
-  return <h1>hello world</h1>;
+  return (
+    <div id="background">
+      <img
+        src="homepageBackground.jpeg"
+        id="background_img"
+        className="center"
+        alt="background"
+      />
+    </div>
+  );
 }
 
 export default Home;
