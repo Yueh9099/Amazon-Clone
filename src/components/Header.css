@@ -1,6 +1,5 @@
 #nav {
   height: 80px;
-  /* width: 1920px; */
   display: flex;
   align-items: center;
   background-color: #131921;
@@ -24,29 +23,38 @@
   border-style: solid;
 }
 #location {
-  margin-right: 20px;
-  width: 150px;
-  height: 40px;
+  margin-right: 10px;
+  width: 160px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
 #location_text {
-  width: inherit;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+#location_line2 {
+  display: flex;
+  justify-content: space-between;
 }
 
 #location_line1 {
   color: #ffffff;
-  text-decoration: none;
-  font-size: 13px;
   display: block;
+  text-decoration: none !important;
 }
+
+a:link {
+  text-decoration: none;
+}
+
 #location_line2_city {
   color: #ffffff;
   text-decoration: none;
-  font-size: 13px;
   font-weight: 900;
   display: inline-block;
-  width: 60px;
+  width: 80px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -55,8 +63,8 @@
 #location_line2_zip {
   color: #ffffff;
   text-decoration: none;
-  font-size: 13px;
   font-weight: 900;
+  display: inline-block;
 }
 
 #location_icon {

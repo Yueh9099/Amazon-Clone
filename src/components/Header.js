@@ -17,8 +17,10 @@ function Header() {
         <LocationOnIcon id="location_icon" />
         <div id="location_text">
           <span id="location_line1">Delivey to Yue</span>
-          <span id="location_line2_city">College Station </span>
-          <span id="location_line2_zip">77840</span>
+          <div id="location_line2">
+            <span id="location_line2_city">College Station </span>
+            <span id="location_line2_zip">77840</span>
+          </div>
         </div>
       </a>
       <div id="search">
@@ -38,7 +40,7 @@ function Header() {
         </div>
       </a>
 
-      <a className="nav_click" id="order_check">
+      <a href=" " className="nav_click" id="order_check">
         <div id="return_and_order">
           <span id="return">Returns</span>
           <span id="order">&Orders</span>
