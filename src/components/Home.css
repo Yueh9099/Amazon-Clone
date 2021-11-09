@@ -2,11 +2,15 @@
   max-width: 1500px;
   min-width: 600px;
   flex-shrink: 1;
+  mask-image: linear-gradient(black 70%, transparent);
 }
 
 #background {
   display: flex;
   justify-content: space-around;
+}
+body {
+  background-color: #eaeded;
 }
 
 /* .center {
