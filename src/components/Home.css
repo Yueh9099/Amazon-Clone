@@ -1,22 +1,19 @@
 #background_img {
+  /* width: 100%; */
+  mask-image: linear-gradient(black 70%, transparent);
+}
+#middle_contetn {
   max-width: 1500px;
   min-width: 600px;
   flex-shrink: 1;
-  mask-image: linear-gradient(black 70%, transparent);
 }
-
-#background {
+#content {
   display: flex;
   justify-content: space-around;
-}
-body {
   background-color: #eaeded;
 }
 
-/* .center {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  min-width: 500px;
-} */
+#products {
+  position: relative;
+  bottom: 100px;
+}
