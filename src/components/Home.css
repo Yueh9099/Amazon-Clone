@@ -2,18 +2,21 @@
   /* width: 100%; */
   mask-image: linear-gradient(black 70%, transparent);
 }
-#middle_contetn {
-  max-width: 1500px;
-  min-width: 600px;
-  flex-shrink: 1;
-}
+
 #content {
   display: flex;
   justify-content: space-around;
   background-color: #eaeded;
+  min-width: 1000px;
+  height: 5000px;
+}
+
+#screen_off {
+  height: 200px;
 }
 
 #products {
   position: relative;
-  bottom: 100px;
+  z-index: 10;
+  display: flex;
 }
