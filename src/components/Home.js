@@ -1,6 +1,7 @@
 import Product from "./Product";
 import "./Product.css";
-import iphone13PM from "../assets/productsImg/iphone13ProMax.jpg";
+import Iphone13PM from "../assets/productsImg/iphone13ProMax.jpg";
+import AlienWare from "../assets/productsImg/DellAlienWare.jpg";
 function Home() {
   return (
     <div id="content">
@@ -16,11 +17,17 @@ function Home() {
         <div id="products">
           <Product
             title="Apple iPhone 13 Pro Max (1TB, Sierra Blue) [Locked] + Carrier Subscription"
-            image={iphone13PM}
+            image={Iphone13PM}
             price="1299"
             rate="4.5"
           />
-          {/* <Product title = "xixi" image = "haha" price = "50$" rate ="4.5" /> */}
+          <Product
+            title="Alienware m17 R4, 17.3 inch FHD (Full HD) Gaming Laptop - Intel Core 
+            i7-10870H, 16GB DDR4 RAM, 1TB SSD, NVIDIA GeForce RTX 3060"
+            image={AlienWare}
+            price="2500"
+            rate="3.9"
+          />
         </div>
       </div>
     </div>

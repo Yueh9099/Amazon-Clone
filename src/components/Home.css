@@ -1,6 +1,7 @@
 #background_img {
-  /* width: 100%; */
   mask-image: linear-gradient(black 70%, transparent);
+  width: 1500px;
+  height: 600px;
 }
 
 #content {
@@ -9,14 +10,28 @@
   background-color: #eaeded;
   min-width: 1000px;
   height: 5000px;
+
+}
+#middle_content {
+
+  width: 1500px;
+  min-width: 600px;
 }
 
 #screen_off {
   height: 250px;
+
+  display: flex;
+  justify-content: center;
 }
 
 #products {
-  position: relative;
   z-index: 10;
   display: flex;
+  position: relative;
+  left: 0;
+  flex-grow: 1;
+  border-width: 10px;
+  border-style: solid;
+
 }

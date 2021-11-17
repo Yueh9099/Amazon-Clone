@@ -1,9 +1,9 @@
 #product_content {
   background-color: white;
   border-width: 4px;
-  flex-basis: 350px;
+  max-width: 350px;
+  flex-basis: 306px;
   height: 385px;
-  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,11 +44,11 @@
   width: 100%;
   border-width: 0.5px;
 }
-#off{
-    height: 3px;
+#off {
+  height: 3px;
 }
 
-#product_top{
-    display: flex;
-    flex-direction: column;
+#product_top {
+  display: flex;
+  flex-direction: column;
 }
