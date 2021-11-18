@@ -1,4 +1,4 @@
-import Rating from '@mui/material/Rating';
+import Rating from "@mui/material/Rating";
 function Product({ title, image, price, rate }) {
   return (
     <div id="product_content">
@@ -16,8 +16,9 @@ function Product({ title, image, price, rate }) {
         <img src={image} alt="" />
       </div>
 
-      <div id="product_bottom"><button id="product_add_button">Add to Cart</button>  </div>
-  
+      <div id="product_bottom">
+        <button id="product_add_button">Add to Cart</button>{" "}
+      </div>
     </div>
   );
 }

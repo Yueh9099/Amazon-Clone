@@ -9,11 +9,9 @@
   justify-content: space-around;
   background-color: #eaeded;
   min-width: 1000px;
-  height: 5000px;
-
+  height: 3000px;
 }
 #middle_content {
-
   width: 1500px;
   min-width: 600px;
 }
@@ -25,13 +23,19 @@
   justify-content: center;
 }
 
-#products {
+#products_row1,
+#products_row2 {
   z-index: 10;
   display: flex;
   position: relative;
   left: 0;
-  flex-grow: 1;
-  border-width: 10px;
-  border-style: solid;
+  justify-content: space-around;
+}
 
+@media only screen and (max-width: 1160px) {
+  #products_row1,
+  #products_row2 {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
