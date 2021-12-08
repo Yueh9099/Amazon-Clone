@@ -3,7 +3,19 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import IconButton from "@material-ui/core/IconButton";
 import { IconFlagUS } from "material-ui-flags";
+import GoogleLogin from "react-google-login";
+import { useState } from "react";
+import { GoogleLogout } from "react-google-login";
 function Header() {
+  const responseGoogle = (response) => {
+    setSignIn(true);
+  };
+
+  const logOut = (respons) => {
+    setSignIn(false);
+  };
+  const [isShown, setIsShown] = useState(false);
+  const [isSignIn, setSignIn] = useState(false);
   return (
     <div id="nav">
       <img
@@ -34,9 +46,33 @@ function Header() {
           <IconFlagUS />
         </IconButton>
       </a>
-      <a href=" " className="nav_click" id="sign">
+      <a
+        href=" "
+        className="nav_click"
+        id="sign"
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
+      >
+        {isShown && !isSignIn && (
+          <div id="dropdown_sigin">
+            <GoogleLogin
+              clientId="818198889027-8dhoghdjda5q4a6i7qupi2lfild7s2ng.apps.googleusercontent.com"
+              buttonText="Login with Google"
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+              cookiePolicy="single_host_origin"
+              isSignedIn={true}
+            />
+          </div>
+        )}
+        {isShown && isSignIn && (
+          <div id="dropdown_signout">
+            <GoogleLogout buttonText="Log Out" onSuccess={logOut} />
+          </div>
+        )}
         <div id="sign_status">
-          <span>Sign in</span>
+          {!isSignIn && <span>Sign in</span>}
+          {isSignIn && <span>Yue</span>}
         </div>
       </a>
 

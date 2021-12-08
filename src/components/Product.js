@@ -1,4 +1,6 @@
 import Rating from "@mui/material/Rating";
+import { useStateValue } from "../StateProvider";
+const [{ basket }, dispatch] = useStateValue();
 function Product({ title, image, price, rate }) {
   return (
     <div id="product_content">

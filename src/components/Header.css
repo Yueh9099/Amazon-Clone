@@ -99,11 +99,21 @@ a:link {
 
 #sign {
   padding: 10px;
+  position: relative;
 }
 #sign_status {
   color: #ffffff;
   font-weight: 800;
   white-space: nowrap;
+}
+
+#dropdown_sigin, #dropdown_signout {
+  position: absolute;
+  top: 40px;
+  border: orange;
+  border-style: solid;
+  left: 0px;
+  
 }
 
 #order_check {
