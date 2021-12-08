@@ -146,3 +146,7 @@ a:link {
   align-items: flex-end;
   font-weight: 800;
 }
+
+#cart_number{
+  color: #ffffff;
+}

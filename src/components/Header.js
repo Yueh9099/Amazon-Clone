@@ -6,7 +6,9 @@ import { IconFlagUS } from "material-ui-flags";
 import GoogleLogin from "react-google-login";
 import { useState } from "react";
 import { GoogleLogout } from "react-google-login";
+import { useStateValue } from "../StateProvider";
 function Header() {
+  const [{ basket, user }, dispatch] = useStateValue();
   const responseGoogle = (response) => {
     setSignIn(true);
   };
@@ -87,6 +89,7 @@ function Header() {
         <div id="cart_text">
           <span>cart</span>
         </div>
+        <span id="cart_number">{basket?.length}</span>
       </a>
     </div>
   );
