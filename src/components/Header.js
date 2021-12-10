@@ -7,6 +7,7 @@ import GoogleLogin from "react-google-login";
 import { useState } from "react";
 import { GoogleLogout } from "react-google-login";
 import { useStateValue } from "../StateProvider";
+import { Link } from "react-router-dom";
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
   const responseGoogle = (response) => {
@@ -20,12 +21,14 @@ function Header() {
   const [isSignIn, setSignIn] = useState(false);
   return (
     <div id="nav">
-      <img
-        className="nav_click"
-        id="amazon_logo"
-        src="amazon_logo.png"
-        alt="Amazon Logo"
-      />
+      <Link to="/">
+        <img
+          className="nav_click"
+          id="amazon_logo"
+          src="amazon_logo.png"
+          alt="Amazon Logo"
+        />
+      </Link>
 
       <a href=" " className="nav_click" id="location">
         <LocationOnIcon id="location_icon" />
@@ -84,13 +87,13 @@ function Header() {
           <span id="order">&Orders</span>
         </div>
       </a>
-      <a className="nav_click" id="cart">
+      <Link to="/ShopCart" className="nav_click" id="cart">
         <AddShoppingCartIcon id="cart_logo" />
         <div id="cart_text">
           <span>cart</span>
         </div>
         <span id="cart_number">{basket?.length}</span>
-      </a>
+      </Link>
     </div>
   );
 }
