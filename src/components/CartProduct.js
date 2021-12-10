@@ -2,14 +2,14 @@ import { useStateValue } from "../StateProvider";
 import Rating from "@mui/material/Rating";
 
 
-function CartProduct({ title, image, price, rate }) {
+function CartProduct({ id, title, image, price, rate }) {
   const [{ basket }, dispatch] = useStateValue();
   const removeFromBasket = () => {
     // dispatch the item into the data layer
     dispatch({
       type: "REMOVE_FROM_BASKET",
       item: {
-        title: title,
+        id: id,
       },
     });
   };

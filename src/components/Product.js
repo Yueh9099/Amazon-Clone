@@ -1,14 +1,14 @@
 import Rating from "@mui/material/Rating";
 import { useStateValue } from "../StateProvider";
 
-function Product({ key, title, image, price, rate }) {
+function Product({ id, title, image, price, rate }) {
   const [{ basket }, dispatch] = useStateValue();
   const addToBasket = () => {
     // dispatch the item into the data layer
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
-        key:key,
+        id: id,
         title: title,
         image: image,
         price: price,
@@ -16,8 +16,6 @@ function Product({ key, title, image, price, rate }) {
       },
     });
   };
-
-
 
   return (
     <div id="product_content">
@@ -36,7 +34,9 @@ function Product({ key, title, image, price, rate }) {
       </div>
 
       <div id="product_bottom">
-        <button onClick={addToBasket} id="product_add_button">Add to Cart</button>
+        <button onClick={addToBasket} id="product_add_button">
+          Add to Cart
+        </button>
       </div>
     </div>
   );

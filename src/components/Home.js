@@ -21,14 +21,14 @@ function Home() {
         </div>
         <div id="products_row1">
           <Product
-            key={1}
+            id={1}
             title="Apple iPhone 13 Pro Max (1TB, Sierra Blue) [Locked] + Carrier Subscription"
             image={Iphone13PM}
             price={1299}
             rate={4.5}
           />
           <Product
-            key={2}
+            id={2}
             title="Alienware m17 R4, 17.3 inch FHD (Full HD) Gaming Laptop - Intel Core 
             i7-10870H, 16GB DDR4 RAM, 1TB SSD, NVIDIA GeForce RTX 3060"
             image={AlienWare}
@@ -36,14 +36,14 @@ function Home() {
             rate={3.9}
           />
           <Product
-            key={3}
+            id={3}
             title="Lenovo Legion Slim 7 15 Gaming Laptop 15.6 FHD 165Hz IPS 100% sRGB Display AMD Octa-Core Ryzen 7 5800H 16GB RAM 512GB SSD GeForce RTX 3060"
             image={Legion7}
             price={1799}
             rate={3.6}
           />
           <Product
-            key={4}
+            id={4}
             title="Lenovo Legion Slim 7 15 Gaming Laptop 15.6 FHD 165Hz IPS 100% sRGB Display AMD Octa-Core Ryzen 7 5800H 16GB RAM 512GB SSD GeForce RTX 3060"
             image={AlienWare}
             price={1799}
@@ -53,28 +53,28 @@ function Home() {
 
         <div id="products_row2">
           <Product
-            key={5}
+            id={5}
             title="Hanes Men's EcoSmart Sweatshirt"
             image={Sweatshirt}
             price={10}
             rate={4.6}
           />
           <Product
-            key={6}
+            id={6}
             title="Carhartt Men's Knit Cuffed Beanie"
             image={Beanie}
             price={20}
             rate={4.8}
           />
           <Product
-            key={7}
+            id={7}
             title="FOCO Mens NFL Team Logo Moccasin Slippers"
             image={Sliper}
             price={34}
             rate={4.2}
           />
           <Product
-            key={8}
+            id={8}
             title="Sengled Smart Light Bulbs, Color Changing Alexa Light Bulb Bluetooth Mesh, Smart Bulbs That Work with Alexa Only, Dimmable LED Bulb A19 E26 Multicolor, High CRI, High Brightness, 9W 800LM, 1Pack"
             image={Bulb}
             price={5.3}
