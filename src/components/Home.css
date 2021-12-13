@@ -1,0 +1,41 @@
+#background_img {
+  mask-image: linear-gradient(black 70%, transparent);
+  width: 1500px;
+  height: 600px;
+}
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eaeded;
+  min-width: 1000px;
+  height: 3000px add;
+}
+#middle_content {
+  width: 1500px;
+  min-width: 600px;
+}
+
+#screen_off {
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+}
+
+#products_row1,
+#products_row2 {
+  z-index: 10;
+  display: flex;
+  position: relative;
+  left: 0;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1160px) {
+  #products_row1,
+  #products_row2 {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
