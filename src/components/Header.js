@@ -9,14 +9,14 @@ import { GoogleLogout } from "react-google-login";
 import { useStateValue } from "../StateProvider";
 import { Link } from "react-router-dom";
 function Header() {
-  const [{ basket, user }, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
   const logIn = (response) => {
     setSignIn(true);
   };
 
   const logOut = (respons) => {
     setSignIn(false);
-    console.log("should sign out")
+    console.log("should sign out");
   };
   const [isShown, setIsShown] = useState(false);
   const [isSignIn, setSignIn] = useState(false);
