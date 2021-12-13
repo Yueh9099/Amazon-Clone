@@ -10,7 +10,7 @@ import { useStateValue } from "../StateProvider";
 import { Link } from "react-router-dom";
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
-  const responseGoogle = (response) => {
+  const logIn = (response) => {
     setSignIn(true);
   };
 
@@ -63,10 +63,9 @@ function Header() {
             <GoogleLogin
               clientId="818198889027-8dhoghdjda5q4a6i7qupi2lfild7s2ng.apps.googleusercontent.com"
               buttonText="Login with Google"
-              onSuccess={responseGoogle}
-              onFailure={responseGoogle}
+              onSuccess={logIn}
+              onFailure={logOut}
               cookiePolicy="single_host_origin"
-              isSignedIn={true}
             />
           </div>
         )}
