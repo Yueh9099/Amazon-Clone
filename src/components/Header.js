@@ -16,6 +16,7 @@ function Header() {
 
   const logOut = (respons) => {
     setSignIn(false);
+    console.log("should sign out")
   };
   const [isShown, setIsShown] = useState(false);
   const [isSignIn, setSignIn] = useState(false);
